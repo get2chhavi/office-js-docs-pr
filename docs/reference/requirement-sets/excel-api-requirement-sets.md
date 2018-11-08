@@ -31,6 +31,277 @@ For more information about versions, build numbers, and Office Online Server, se
 - [Where you can find the version and build number for an Office 365 client application](https://support.office.com/article/version-and-build-numbers-of-update-channel-releases-ae942449-1fca-4484-898b-a933ea23def7)
 - [Office Online Server overview](https://docs.microsoft.com/officeonlineserver/office-online-server-overview)
 
+## Preview APIs for Excel JavaScript
+
+|Object|What's new|Description|
+|:----|:----|:----|
+|[Application](/javascript/api/excel/excel.application)|calculationEngineVersion (property)|Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by. Read-only.|
+|[Application](/javascript/api/excel/excel.application)|calculationState (property)|Returns a CalculationState that indicates the calculation state of the application. See Excel.CalculationState for details. Read-only.|
+|[Application](/javascript/api/excel/excel.application)|iterativeCalculation (property)|Returns the Iterative Calculation settings.|
+|[AutoFilter](/javascript/api/excel/excel.autofilter)|criteria (property)|Array that holds all filter criterias in an autofiltered range. Read-Only.|
+|[AutoFilter](/javascript/api/excel/excel.autofilter)|enabled (property)|Indicates if the AutoFilter is enabled or not. Read-Only.|
+|[AutoFilter](/javascript/api/excel/excel.autofilter)|isDataFiltered (property)|Indicates if the AutoFilter has filter criteria. Read-Only.|
+|[Chart](/javascript/api/excel/excel.chart)|pivotOptions (property)|Encapsulates the options for the pivot chart. Read-only.|
+|[ChartAreaFormat](/javascript/api/excel/excel.chartareaformat)|colorScheme (property)|Returns or sets an integer that represents the color scheme for the chart. Read/Write.|
+|[ChartAreaFormat](/javascript/api/excel/excel.chartareaformat)|roundedCorners (property)|True if the chart area of the chart has rounded corners. Read/Write.|
+|[ChartBinOptions](/javascript/api/excel/excel.chartbinoptions)|allowOverflow (property)|Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.|
+|[ChartBinOptions](/javascript/api/excel/excel.chartbinoptions)|allowUnderflow (property)|Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write.|
+|[ChartBinOptions](/javascript/api/excel/excel.chartbinoptions)|count (property)|Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.|
+|[ChartBinOptions](/javascript/api/excel/excel.chartbinoptions)|overflowValue (property)|Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write.|
+|[ChartBinOptions](/javascript/api/excel/excel.chartbinoptions)|type (property)|Returns or sets bin type of a histogram chart or pareto chart. Read/Write.|
+|[ChartBinOptions](/javascript/api/excel/excel.chartbinoptions)|underflowValue (property)|Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write.|
+|[ChartBinOptions](/javascript/api/excel/excel.chartbinoptions)|width (property)|Returns or sets bin width value of a histogram chart or pareto chart. Read/Write.|
+|[ChartBoxwhiskerOptions](/javascript/api/excel/excel.chartboxwhiskeroptions)|quartileCalculation (property)|Returns or sets quartile calculation type of a Box & whisker chart. Read/Write.|
+|[ChartBoxwhiskerOptions](/javascript/api/excel/excel.chartboxwhiskeroptions)|showInnerPoints (property)|Returns or sets if inner points showed in a Box & whisker chart. Read/Write.|
+|[ChartBoxwhiskerOptions](/javascript/api/excel/excel.chartboxwhiskeroptions)|showMeanLine (property)|Returns or sets if mean line showed in a Box & whisker chart. Read/Write.|
+|[ChartBoxwhiskerOptions](/javascript/api/excel/excel.chartboxwhiskeroptions)|showMeanMarker (property)|Returns or sets if mean marker showed in a Box & whisker chart. Read/Write.|
+|[ChartBoxwhiskerOptions](/javascript/api/excel/excel.chartboxwhiskeroptions)|showOutlierPoints (property)|Returns or sets if outlier points showed in a Box & whisker chart. Read/Write.|
+|[ChartErrorBars](/javascript/api/excel/excel.charterrorbars)|endStyleCap (property)|Represents whether have the end style cap for the error bars.|
+|[ChartErrorBars](/javascript/api/excel/excel.charterrorbars)|include (property)|Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.|
+|[ChartErrorBars](/javascript/api/excel/excel.charterrorbars)|format (property)|Represents the formatting of chart ErrorBars.|
+|[ChartErrorBars](/javascript/api/excel/excel.charterrorbars)|type (property)|Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.|
+|[ChartErrorBars](/javascript/api/excel/excel.charterrorbars)|visible (property)|Represents whether shown error bars.|
+|[ChartErrorBarsFormat](/javascript/api/excel/excel.charterrorbarsformat)|line (property)|Represents chart line formatting.|
+|[ChartMapOptions](/javascript/api/excel/excel.chartmapoptions)|labelStrategy (property)|Returns or sets series map labels strategy of a region map chart. Read/Write.|
+|[ChartMapOptions](/javascript/api/excel/excel.chartmapoptions)|level (property)|Returns or sets series map area of a region map chart. Read/Write.|
+|[ChartMapOptions](/javascript/api/excel/excel.chartmapoptions)|projectionType (property)|Returns or sets series projection type of a region map chart. Read/Write.|
+|[ChartPivotOptions](/javascript/api/excel/excel.chartpivotoptions)|showAxisFieldButtons (property)|Represents whether to display axis field buttons on a PivotChart.|
+|[ChartPivotOptions](/javascript/api/excel/excel.chartpivotoptions)|showLegendFieldButtons (property)|Represents whether to display legend field buttons on a PivotChart.|
+|[ChartPivotOptions](/javascript/api/excel/excel.chartpivotoptions)|showReportFilterFieldButtons (property)|Represents whether to display report filter field buttons on a PivotChart.|
+|[ChartPivotOptions](/javascript/api/excel/excel.chartpivotoptions)|showValueFieldButtons (property)|Represents whether to display show value field buttons on a PivotChart.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|bubbleScale (property)|Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMaximumColor (property)|Returns or sets the Color for maximum value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMaximumType (property)|Returns or sets the type for maximum value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMaximumValue (property)|Returns or sets the maximum value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMidpointColor (property)|Returns or sets the Color for midpoint value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMidpointType (property)|Returns or sets the type for midpoint value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMidpointValue (property)|Returns or sets the midpoint value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMinimumColor (property)|Returns or sets the Color for minimum value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMinimumType (property)|Returns or sets the type for minimum value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientMinimumValue (property)|Returns or sets the minimum value of a region map chart series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|gradientStyle (property)|Returns or sets series gradient style of a region map chart. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|invertColor (property)|Returns or sets the fill color for negative data points in a series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|parentLabelStrategy (property)|Returns or sets series parent label strategy area of a treemap chart. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|binOptions (property)|Encapsulates the bin options only for histogram chart and pareto chart. Read-only.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|boxwhiskerOptions (property)|Encapsulates the options for the Box & Whisker chart. Read-only.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|mapOptions (property)|Encapsulates the options for the Map chart. Read-only.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|xerrorBars (property)|Represents the error bar object for a chart series.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|yerrorBars (property)|Represents the error bar object for a chart series.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|showConnectorLines (property)|Returns or sets if connector lines show in a waterfall chart. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|showLeaderLines (property)|True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|splitValue (property)|Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.|
+|[ChartTrendlineLabel](/javascript/api/excel/excel.charttrendlinelabel)|linkNumberFormat (property)|Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).|
+|[ChartTrendlineLabel](/javascript/api/excel/excel.charttrendlinelabel)|linkNumberFormat (property)|Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).|
+|[ChartTrendlineLabel](/javascript/api/excel/excel.charttrendlinelabel)|linkNumberFormat (property)|Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).|
+|[ChartTrendlineLabel](/javascript/api/excel/excel.charttrendlinelabel)|linkNumberFormat (property)|Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).|
+|[Comment](/javascript/api/excel/excel.comment)|id (property)|Represents the comment identifier. Read-only.|
+|[Comment](/javascript/api/excel/excel.comment)|isParent (property)|Represents whether it is a comment thread or reply. Always return true here. Read-only.|
+|[Comment](/javascript/api/excel/excel.comment)|replies (property)|Represents a collection of reply objects associated with the comment. Read-only.|
+|[CommentCollection](/javascript/api/excel/excel.commentcollection)|items (property)|Gets the loaded child items in this collection.|
+|[CommentReply](/javascript/api/excel/excel.commentreply)|id (property)|Represents the comment reply identifier. Read-only.|
+|[CommentReply](/javascript/api/excel/excel.commentreply)|isParent (property)|Represents whether it is a comment thread or reply. Always return false here. Read-only.|
+|[CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection)|items (property)|Gets the loaded child items in this collection.|
+|[CustomFunctionEventArgs](/javascript/api/excel/excel.customfunctioneventargs)|higherTicks (property)||
+|[CustomFunctionEventArgs](/javascript/api/excel/excel.customfunctioneventargs)|lowerTicks (property)||
+|[FilterCriteria](/javascript/api/excel/excel.filtercriteria)|subField? (property)|The property used by the filter to do rich filter on richvalues.|
+|[FilterCriteria](/javascript/api/excel/excel.filtercriteria)|subField? (property)|Represents the subfield that is the target property name of a rich value to sort on.|
+|[GeometricShape](/javascript/api/excel/excel.geometricshape)|id (property)|Represents the shape identifier. Read-only.|
+|[GeometricShape](/javascript/api/excel/excel.geometricshape)|shape (property)|Returns the shape object for the geometric shape. Read-only.|
+|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|centerFooter (property)|Gets or sets the center footer of the worksheet.|
+|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|centerHeader (property)|Gets or sets the center header of the worksheet.|
+|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|leftFooter (property)|Gets or sets the left footer of the worksheet.|
+|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|leftHeader (property)|Gets or sets the left header of the worksheet.|
+|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|rightFooter (property)|Gets or sets the right footer of the worksheet.|
+|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|rightHeader (property)|Gets or sets the right header of the worksheet.|
+|[HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup)|defaultForAllPages (property)|The general header/footer, used for all pages unless even/odd or first page is specified.|
+|[HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup)|evenPages (property)|The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.|
+|[HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup)|firstPage (property)|The first page header/footer, for all other pages general or even/odd is used.|
+|[HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup)|oddPages (property)|The header/footer to use for odd pages, even header/footer needs to be specified for even pages.|
+|[HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup)|state (property)|Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.|
+|[HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup)|useSheetMargins (property)|Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.|
+|[HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup)|useSheetScale (property)|Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.|
+|[Image](/javascript/api/excel/excel.image)|format (property)|Returns the format for the image. Read-only.|
+|[Image](/javascript/api/excel/excel.image)|id (property)|Represents the shape identifier for the image object. Read-only.|
+|[Image](/javascript/api/excel/excel.image)|shape (property)|Returns the shape object for the image. Read-only.|
+|[IterativeCalculation](/javascript/api/excel/excel.iterativecalculation)|enabled (property)|True if Excel will use iteration to resolve circular references.|
+|[IterativeCalculation](/javascript/api/excel/excel.iterativecalculation)|maxChange (property)|Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.|
+|[IterativeCalculation](/javascript/api/excel/excel.iterativecalculation)|maxIteration (property)|Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.|
+|[PageBreak](/javascript/api/excel/excel.pagebreak)|columnIndex (property)|Represents the column index for the page break|
+|[PageBreak](/javascript/api/excel/excel.pagebreak)|rowIndex (property)|Represents the row index for the page break|
+|[PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection)|items (property)|Gets the loaded child items in this collection.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|blackAndWhite (property)|Gets or sets the worksheet's black and white print option.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|bottomMargin (property)|Gets or sets the worksheet's bottom page margin to use for printing in points.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|centerHorizontally (property)|Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|centerVertically (property)|Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|draftMode (property)|Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|firstPageNumber (property)|Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|footerMargin (property)|Gets or sets the worksheet's footer margin, in points, for use when printing.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|headerMargin (property)|Gets or sets the worksheet's header margin, in points, for use when printing.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|leftMargin (property)|Gets or sets the worksheet's left margin, in points, for use when printing.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|orientation (property)|Gets or sets the worksheet's orientation of the page.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|paperSize (property)|Gets or sets the worksheet's paper size of the page.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|printComments (property)|Gets or sets whether the worksheet's comments should be displayed when printing.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|printErrors (property)|Gets or sets the worksheet's print errors option.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|printGridlines (property)|Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|printHeadings (property)|Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|printOrder (property)|Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page number printed.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|headersFooters (property)|Header and footer configuration for the worksheet.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|rightMargin (property)|Gets or sets the worksheet's right margin, in points, for use when printing.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|topMargin (property)|Gets or sets the worksheet's top margin, in points, for use when printing.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|zoom (property)|Gets or sets the worksheet's print zoom options.|
+|[PageLayoutMarginOptions](/javascript/api/excel/excel.pagelayoutmarginoptions)|bottom? (property)|Represents the page layout bottom margin in the unit specified to use for printing.|
+|[PageLayoutMarginOptions](/javascript/api/excel/excel.pagelayoutmarginoptions)|footer? (property)|Represents the page layout footer margin in the unit specified to use for printing.|
+|[PageLayoutMarginOptions](/javascript/api/excel/excel.pagelayoutmarginoptions)|header? (property)|Represents the page layout header margin in the unit specified to use for printing.|
+|[PageLayoutMarginOptions](/javascript/api/excel/excel.pagelayoutmarginoptions)|left? (property)|Represents the page layout left margin in the unit specified to use for printing.|
+|[PageLayoutMarginOptions](/javascript/api/excel/excel.pagelayoutmarginoptions)|right? (property)|Represents the page layout right margin in the unit specified to use for printing.|
+|[PageLayoutMarginOptions](/javascript/api/excel/excel.pagelayoutmarginoptions)|top? (property)|Represents the page layout top margin in the unit specified to use for printing.|
+|[PageLayoutZoomOptions](/javascript/api/excel/excel.pagelayoutzoomoptions)|horizontalFitToPages? (property)|Number of pages to fit horizontally. This value can be null if percentage scale is used.|
+|[PageLayoutZoomOptions](/javascript/api/excel/excel.pagelayoutzoomoptions)|scale? (property)|Print page scale value can be between 10 and 400. This value can be null if fit to page tall or wide is specified.|
+|[PageLayoutZoomOptions](/javascript/api/excel/excel.pagelayoutzoomoptions)|verticalFitToPages? (property)|Number of pages to fit vertically. This value can be null if percentage scale is used.|
+|[PivotLayout](/javascript/api/excel/excel.pivotlayout)|enableFieldList (property)|True if the field list should be shown or hidden from the UI.|
+|[PivotTable](/javascript/api/excel/excel.pivottable)|useCustomSortLists (property)|True if the PivotTable should use custom lists when sorting.|
+|[Range](/javascript/api/excel/excel.range)|hasSpill (property)|Represents if all cells have a spill border.|
+|[Range](/javascript/api/excel/excel.range)|linkedDataTypeState (property)|Represents the data type state of each cell. Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|address (property)|Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|addressLocal (property)|Returns the RageAreas reference in the user locale. Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|areaCount (property)|Returns the number of rectangular ranges that comprise this RangeAreas object.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|areas (property)|Returns a collection of rectangular ranges that comprise this RangeAreas object.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|cellCount (property)|Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|conditionalFormats (property)|Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|dataValidation (property)|Returns a dataValidation object for all ranges in the RangeAreas.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|format (property)|Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|isEntireColumn (property)|Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|isEntireRow (property)|Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|worksheet (property)|Returns the worksheet for the current RangeAreas. Read-only.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|style (property)|Represents the style for all ranges in this RangeAreas object.|
+|[RangeCollection](/javascript/api/excel/excel.rangecollection)|items (property)|Gets the loaded child items in this collection.|
+|[RangeFill](/javascript/api/excel/excel.rangefill)|pattern (property)|Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.|
+|[RangeFill](/javascript/api/excel/excel.rangefill)|patternColor (property)|Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").|
+|[RangeFill](/javascript/api/excel/excel.rangefill)|patternTintAndShade (property)|Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.|
+|[RangeFill](/javascript/api/excel/excel.rangefill)|tintAndShade (property)|Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.|
+|[RangeFont](/javascript/api/excel/excel.rangefont)|tintAndShade (property)|Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.|
+|[RangeFont](/javascript/api/excel/excel.rangefont)|tintAndShade (property)|Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.|
+|[RangeFont](/javascript/api/excel/excel.rangefont)|subscript (property)|Represents the Subscript status of font.|
+|[RangeFont](/javascript/api/excel/excel.rangefont)|superscript (property)|Represents the Superscript status of font.|
+|[RangeFont](/javascript/api/excel/excel.rangefont)|tintAndShade (property)|Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.|
+|[RemoveDuplicatesResult](/javascript/api/excel/excel.removeduplicatesresult)|removed (property)|Number of duplicated rows removed by the operation.|
+|[RemoveDuplicatesResult](/javascript/api/excel/excel.removeduplicatesresult)|uniqueRemaining (property)|Number of remaining unique rows present in the resulting range.|
+|[ReplaceCriteria](/javascript/api/excel/excel.replacecriteria)|completeMatch? (property)|Specifies whether the match needs to be complete or partial. Default is false (partial).|
+|[ReplaceCriteria](/javascript/api/excel/excel.replacecriteria)|matchCase? (property)|Specifies whether the match is case sensitive. Default is false (insensitive).|
+|[SearchCriteria](/javascript/api/excel/excel.searchcriteria)|completeMatch? (property)|Specifies whether the match needs to be complete or partial. Default is false (partial).|
+|[SearchCriteria](/javascript/api/excel/excel.searchcriteria)|matchCase? (property)|Specifies whether the match is case sensitive. Default is false (insensitive).|
+|[SearchCriteria](/javascript/api/excel/excel.searchcriteria)|searchDirection? (property)|Specifies the search direction. Default is forward. See Excel.SearchDirection.|
+|[Shape](/javascript/api/excel/excel.shape)|altTextDescription (property)|Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.|
+|[Shape](/javascript/api/excel/excel.shape)|altTextTitle (property)|Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.|
+|[Shape](/javascript/api/excel/excel.shape)|geometricShapeType (property)|Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.|
+|[Shape](/javascript/api/excel/excel.shape)|height (property)|Represents the height, in points, of the shape.|
+|[Shape](/javascript/api/excel/excel.shape)|left (property)|The distance, in points, from the left side of the shape to the left of the worksheet.|
+|[Shape](/javascript/api/excel/excel.shape)|lockAspectRatio (property)|Represents if the aspect ratio locked, in boolean, of the shape.|
+|[Shape](/javascript/api/excel/excel.shape)|placement (property)|Represents the placment, value that represents the way the object is attached to the cells below it.|
+|[Shape](/javascript/api/excel/excel.shape)|fill (property)|Returns the fill formatting of the shape object. Read-only.|
+|[Shape](/javascript/api/excel/excel.shape)|geometricShape (property)|Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape.|
+|[Shape](/javascript/api/excel/excel.shape)|id (property)|Represents the shape identifier. Read-only.|
+|[Shape](/javascript/api/excel/excel.shape)|image (property)|Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.|
+|[Shape](/javascript/api/excel/excel.shape)|name (property)|Represents the name of the shape. Read-only.|
+|[Shape](/javascript/api/excel/excel.shape)|onActivated (event)|Occurs when the shape is activated.|
+|[Shape](/javascript/api/excel/excel.shape)|onDeactivated (event)|Occurs when the shape is activated.|
+|[Shape](/javascript/api/excel/excel.shape)|textFrame (property)|Returns the textFrame object of a shape. Read only.|
+|[Shape](/javascript/api/excel/excel.shape)|type (property)|Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.|
+|[Shape](/javascript/api/excel/excel.shape)|zorderPosition (property)|Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.|
+|[Shape](/javascript/api/excel/excel.shape)|rotation (property)|Represents the rotation, in degrees, of the shape.|
+|[Shape](/javascript/api/excel/excel.shape)|top (property)|The distance, in points, from the top edge of the shape to the top of the worksheet.|
+|[Shape](/javascript/api/excel/excel.shape)|visible (property)|Represents the visibility, in boolean, of the specified shape.|
+|[Shape](/javascript/api/excel/excel.shape)|width (property)|Represents the width, in points, of the shape.|
+|[ShapeActivatedEventArgs](/javascript/api/excel/excel.shapeactivatedeventargs)|shapeId (property)|Gets the id of the shape that is activated.|
+|[ShapeActivatedEventArgs](/javascript/api/excel/excel.shapeactivatedeventargs)|type (property)|Gets the type of the event. See Excel.EventType for details.|
+|[ShapeActivatedEventArgs](/javascript/api/excel/excel.shapeactivatedeventargs)|worksheetId (property)|Gets the id of the worksheet in which the shape is activated.|
+|[ShapeCollection](/javascript/api/excel/excel.shapecollection)|items (property)|Gets the loaded child items in this collection.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|altTextDescription? (property)|Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|altTextTitle? (property)|Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|fill? (property)|Returns the fill formatting of the shape object. Read-only.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|geometricShape? (property)|Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|geometricShapeType? (property)|Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|height? (property)|Represents the height, in points, of the shape.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|id? (property)|Represents the shape identifier. Read-only.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|image? (property)|Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|left? (property)|The distance, in points, from the left side of the shape to the left of the worksheet.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|lockAspectRatio? (property)|Represents if the aspect ratio locked, in boolean, of the shape.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|name? (property)|Represents the name of the shape. Read-only.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|placement? (property)|Represents the placment, value that represents the way the object is attached to the cells below it.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|rotation? (property)|Represents the rotation, in degrees, of the shape.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|textFrame? (property)|Returns the textFrame object of a shape. Read only.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|top? (property)|The distance, in points, from the top edge of the shape to the top of the worksheet.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|type? (property)|Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|visible? (property)|Represents the visibility, in boolean, of the specified shape.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|width? (property)|Represents the width, in points, of the shape.|
+|[ShapeData](/javascript/api/excel/excel.shapedata)|zorderPosition? (property)|Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.|
+|[ShapeDeactivatedEventArgs](/javascript/api/excel/excel.shapedeactivatedeventargs)|shapeId (property)|Gets the id of the shape that is deactivated.|
+|[ShapeDeactivatedEventArgs](/javascript/api/excel/excel.shapedeactivatedeventargs)|type (property)|Gets the type of the event. See Excel.EventType for details.|
+|[ShapeDeactivatedEventArgs](/javascript/api/excel/excel.shapedeactivatedeventargs)|worksheetId (property)|Gets the id of the worksheet in which the shape is deactivated.|
+|[ShapeFill](/javascript/api/excel/excel.shapefill)|foreColor (property)|Represents the shape fill fore color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")|
+|[ShapeFill](/javascript/api/excel/excel.shapefill)|type (property)|Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for detail.|
+|[ShapeFill](/javascript/api/excel/excel.shapefill)|transparency (property)|Returns or sets the degree of transparency of the specified fill as a value from 0.0 (opaque) through 1.0 (clear). For API not supported shape types  or special fill type with inconsistent transparencies, return null. For example, gradient fill type could have inconsistent transparencies.|
+|[ShapeFont](/javascript/api/excel/excel.shapefont)|bold (property)|Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.|
+|[ShapeFont](/javascript/api/excel/excel.shapefont)|color (property)|HTML color code representation of the text color. E.g. #FF0000 represents Red. Returns null if the TextRange includes text fragments with different colors.|
+|[ShapeFont](/javascript/api/excel/excel.shapefont)|italic (property)|Represents the italic status of font. Return null if the TextRange includes both italic and non-italic text fragments.|
+|[ShapeFont](/javascript/api/excel/excel.shapefont)|name (property)|Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, represents corresponding font name; otherwise represents Latin font name.|
+|[ShapeFont](/javascript/api/excel/excel.shapefont)|size (property)|Represents font size in points (e.g. 11). Return null if the TextRange includes text fragments with different font sizes.|
+|[ShapeFont](/javascript/api/excel/excel.shapefont)|underline (property)|Type of underline applied to the font. Return null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.|
+|[Table](/javascript/api/excel/excel.table)|enableCalculation (property)|Gets or sets the enableCalculation property of the worksheet.|
+|[Table](/javascript/api/excel/excel.table)|autoFilter (property)|Represents the AutoFilter object of the worksheet. Read-Only.|
+|[Table](/javascript/api/excel/excel.table)|horizontalPageBreaks (property)|Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.|
+|[Table](/javascript/api/excel/excel.table)|onFiltered (event)|Occurs when filter is applied on a specific worksheet.|
+|[Table](/javascript/api/excel/excel.table)|pageLayout (property)|Gets the PageLayout object of the worksheet.|
+|[Table](/javascript/api/excel/excel.table)|shapes (property)|Returns the collection of all the Shape objects on the worksheet. Read-only.|
+|[Table](/javascript/api/excel/excel.table)|verticalPageBreaks (property)|Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.|
+|[Table](/javascript/api/excel/excel.table)|autoFilter (property)|Represents the AutoFilter object of the table. Read-Only.|
+|[Table](/javascript/api/excel/excel.table)|onFiltered (event)|Occurs when filter is applied on a specific table.|
+|[TableAddedEventArgs](/javascript/api/excel/excel.tableaddedeventargs)|source (property)|Gets the source of the event. See Excel.EventSource for details.|
+|[TableAddedEventArgs](/javascript/api/excel/excel.tableaddedeventargs)|tableId (property)|Gets the id of the table that is added.|
+|[TableAddedEventArgs](/javascript/api/excel/excel.tableaddedeventargs)|type (property)|Gets the type of the event. See Excel.EventType for details.|
+|[TableAddedEventArgs](/javascript/api/excel/excel.tableaddedeventargs)|worksheetId (property)|Gets the id of the worksheet in which the table is added.|
+|[TableCollection](/javascript/api/excel/excel.tablecollection)|onAdded (event)|Occurs when new table is added in a workbook.|
+|[TableCollection](/javascript/api/excel/excel.tablecollection)|onDeleted (event)|Occurs when the specified table is deleted in a workbook.|
+|[TableCollection](/javascript/api/excel/excel.tablecollection)|onFiltered (event)|Occurs when filter is applied on any table in a workbook, or a worksheet.|
+|[TableData](/javascript/api/excel/excel.tabledata)|autoFilter? (property)|Represents the AutoFilter object of the table. Read-Only.|
+|[TableData](/javascript/api/excel/excel.tabledata)|autoFilter? (property)|Represents the AutoFilter object of the worksheet. Read-Only.|
+|[TableData](/javascript/api/excel/excel.tabledata)|enableCalculation? (property)|Gets or sets the enableCalculation property of the worksheet.|
+|[TableData](/javascript/api/excel/excel.tabledata)|horizontalPageBreaks? (property)|Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.|
+|[TableData](/javascript/api/excel/excel.tabledata)|pageLayout? (property)|Gets the PageLayout object of the worksheet.|
+|[TableData](/javascript/api/excel/excel.tabledata)|shapes? (property)|Returns the collection of all the Shape objects on the worksheet. Read-only.|
+|[TableData](/javascript/api/excel/excel.tabledata)|verticalPageBreaks? (property)|Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.|
+|[TableScopedCollection](/javascript/api/excel/excel.tablescopedcollection)|items (property)|Gets the loaded child items in this collection.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|autoSize (property)|Gets or sets the auto sizing settings for the text frame. A text frame can be set to auto size the text to fit the text frame, or auto size the text frame to fit the text, or without auto sizing.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|bottomMargin (property)|Represents the bottom margin, in points, of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|horizontalAlignment (property)|Represents the horizontal alignment of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|horizontalOverflow (property)|Represents the horizontal overflow type of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|leftMargin (property)|Represents the left margin, in points, of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|orientation (property)|Represents the text orientation of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|readingOrder (property)|Represents the reading order of the text frame, RTL or LTR.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|hasText (property)|Specifies whether the TextFrame contains text.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|textRange (property)||
+|[TextFrame](/javascript/api/excel/excel.textframe)|rightMargin (property)|Represents the right margin, in points, of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|topMargin (property)|Represents the top margin, in points, of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|verticalAlignment (property)|Represents the vertical alignment of the text frame.|
+|[TextFrame](/javascript/api/excel/excel.textframe)|verticalOverflow (property)|Represents the vertical overflow type of the text frame.|
+|[TextRange](/javascript/api/excel/excel.textrange)|font (property)|Returns a ShapeFont object that represents the font attributes for the text range. Read-only.|
+|[TextRange](/javascript/api/excel/excel.textrange)|text (property)|Represents the plain text content of the text range.|
+|[Workbook](/javascript/api/excel/excel.workbook)|chartDataPointTrack (property)|True if all charts in the workbook are tracking the actual data points to which they are attached.|
+|[Workbook](/javascript/api/excel/excel.workbook)|isDirty (property)|True if no changes have been made to the specified workbook since it was last saved.|
+|[Workbook](/javascript/api/excel/excel.workbook)|autoSave (property)|True if the workbook is in auto save mode.|
+|[Workbook](/javascript/api/excel/excel.workbook)|calculationEngineVersion (property)|Returns a number about the version of Excel Calculation Engine. Read-Only.|
+|[Workbook](/javascript/api/excel/excel.workbook)|comments (property)|Represents a collection of Comments associated with the workbook. Read-only.|
+|[Workbook](/javascript/api/excel/excel.workbook)|onAutoSaveSettingChanged (event)|Occurs when AutoSave setting is changed on the workbook.|
+|[Workbook](/javascript/api/excel/excel.workbook)|previouslySaved (property)|True if the workbook has ever been saved locally or online.|
+|[Workbook](/javascript/api/excel/excel.workbook)|use1904DateSystem (property)|True if the workbook uses the 1904 date system.|
+|[Workbook](/javascript/api/excel/excel.workbook)|usePrecisionAsDisplayed (property)|True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.|
+|[WorkbookAutoSaveSettingChangedEventArgs](/javascript/api/excel/excel.workbookautosavesettingchangedeventargs)|type (property)|Represents the type of the event. See Excel.EventType for details.|
+|[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|onFiltered (event)|Occurs when any worksheet's filter is applied in the workbook.|
+|[WorksheetFilteredEventArgs](/javascript/api/excel/excel.worksheetfilteredeventargs)|type (property)|Represents the type of the event. See Excel.EventType for details.|
+|[WorksheetFilteredEventArgs](/javascript/api/excel/excel.worksheetfilteredeventargs)|worksheetId (property)|Represents the id of the worksheet in which the filter is applied.|
+|[WorksheetSearchCriteria](/javascript/api/excel/excel.worksheetsearchcriteria)|completeMatch? (property)|Specifies whether the match needs to be complete or partial. Default is false (partial).|
+|[WorksheetSearchCriteria](/javascript/api/excel/excel.worksheetsearchcriteria)|matchCase? (property)|Specifies whether the match is case sensitive. Default is false (insensitive).|
+
 ## What’s new in Excel JavaScript API 1.8
 
 The Excel JavaScript API requirement set 1.8 features include APIs for PivotTables, data validation, charts, events for charts, performance options, and workbook creation.
