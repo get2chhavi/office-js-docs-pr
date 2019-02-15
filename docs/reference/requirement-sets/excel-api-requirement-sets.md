@@ -83,53 +83,6 @@ The following is a complete list of APIs in preview.
 ||[isDataFiltered](/javascript/api/excel/excel.autofilter#isdatafiltered)|Indicates if the AutoFilter has filter criteria. Read-Only.|
 ||[reapply()](/javascript/api/excel/excel.autofilter#reapply--)|Applies the specified Autofilter object currently on the range.|
 ||[remove()](/javascript/api/excel/excel.autofilter#remove--)|Removes the AutoFilter for the range.|
-|[CellBorder](/javascript/api/excel/excel.cellborder)|[color](/javascript/api/excel/excel.cellborder#color)||
-||[style](/javascript/api/excel/excel.cellborder#style)||
-||[tintAndShade](/javascript/api/excel/excel.cellborder#tintandshade)||
-||[weight](/javascript/api/excel/excel.cellborder#weight)||
-|[CellBorderCollection](/javascript/api/excel/excel.cellbordercollection)|[bottom](/javascript/api/excel/excel.cellbordercollection#bottom)||
-||[diagonalDown](/javascript/api/excel/excel.cellbordercollection#diagonaldown)||
-||[diagonalUp](/javascript/api/excel/excel.cellbordercollection#diagonalup)||
-||[horizontal](/javascript/api/excel/excel.cellbordercollection#horizontal)||
-||[left](/javascript/api/excel/excel.cellbordercollection#left)||
-||[right](/javascript/api/excel/excel.cellbordercollection#right)||
-||[top](/javascript/api/excel/excel.cellbordercollection#top)||
-||[vertical](/javascript/api/excel/excel.cellbordercollection#vertical)||
-|[CellProperties](/javascript/api/excel/excel.cellproperties)|[address](/javascript/api/excel/excel.cellproperties#address)||
-||[addressLocal](/javascript/api/excel/excel.cellproperties#addresslocal)||
-||[hasSpill](/javascript/api/excel/excel.cellproperties#hasspill)||
-||[hidden](/javascript/api/excel/excel.cellproperties#hidden)||
-|[CellPropertiesFill](/javascript/api/excel/excel.cellpropertiesfill)|[color](/javascript/api/excel/excel.cellpropertiesfill#color)||
-||[pattern](/javascript/api/excel/excel.cellpropertiesfill#pattern)||
-||[patternColor](/javascript/api/excel/excel.cellpropertiesfill#patterncolor)||
-||[patternTintAndShade](/javascript/api/excel/excel.cellpropertiesfill#patterntintandshade)||
-||[tintAndShade](/javascript/api/excel/excel.cellpropertiesfill#tintandshade)||
-|[CellPropertiesFont](/javascript/api/excel/excel.cellpropertiesfont)|[bold](/javascript/api/excel/excel.cellpropertiesfont#bold)||
-||[color](/javascript/api/excel/excel.cellpropertiesfont#color)||
-||[italic](/javascript/api/excel/excel.cellpropertiesfont#italic)||
-||[name](/javascript/api/excel/excel.cellpropertiesfont#name)||
-||[size](/javascript/api/excel/excel.cellpropertiesfont#size)||
-||[strikethrough](/javascript/api/excel/excel.cellpropertiesfont#strikethrough)||
-||[subscript](/javascript/api/excel/excel.cellpropertiesfont#subscript)||
-||[superscript](/javascript/api/excel/excel.cellpropertiesfont#superscript)||
-||[tintAndShade](/javascript/api/excel/excel.cellpropertiesfont#tintandshade)||
-||[underline](/javascript/api/excel/excel.cellpropertiesfont#underline)||
-|[CellPropertiesFormat](/javascript/api/excel/excel.cellpropertiesformat)|[autoIndent](/javascript/api/excel/excel.cellpropertiesformat#autoindent)||
-||[borders](/javascript/api/excel/excel.cellpropertiesformat#borders)||
-||[fill](/javascript/api/excel/excel.cellpropertiesformat#fill)||
-||[font](/javascript/api/excel/excel.cellpropertiesformat#font)||
-||[horizontalAlignment](/javascript/api/excel/excel.cellpropertiesformat#horizontalalignment)||
-||[indentLevel](/javascript/api/excel/excel.cellpropertiesformat#indentlevel)||
-||[protection](/javascript/api/excel/excel.cellpropertiesformat#protection)||
-||[readingOrder](/javascript/api/excel/excel.cellpropertiesformat#readingorder)||
-||[shrinkToFit](/javascript/api/excel/excel.cellpropertiesformat#shrinktofit)||
-||[textOrientation](/javascript/api/excel/excel.cellpropertiesformat#textorientation)||
-||[useStandardHeight](/javascript/api/excel/excel.cellpropertiesformat#usestandardheight)||
-||[useStandardWidth](/javascript/api/excel/excel.cellpropertiesformat#usestandardwidth)||
-||[verticalAlignment](/javascript/api/excel/excel.cellpropertiesformat#verticalalignment)||
-||[wrapText](/javascript/api/excel/excel.cellpropertiesformat#wraptext)|Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.|
-|[CellPropertiesProtection](/javascript/api/excel/excel.cellpropertiesprotection)|[formulaHidden](/javascript/api/excel/excel.cellpropertiesprotection#formulahidden)||
-||[locked](/javascript/api/excel/excel.cellpropertiesprotection#locked)||
 |[Chart](/javascript/api/excel/excel.chart)|[activate()](/javascript/api/excel/excel.chart#activate--)|Activate the chart in the Excel UI.|
 ||[pivotOptions](/javascript/api/excel/excel.chart#pivotoptions)|Encapsulates the options for the pivot chart. Read-only.|
 |[ChartAreaFormat](/javascript/api/excel/excel.chartareaformat)|[colorScheme](/javascript/api/excel/excel.chartareaformat#colorscheme)|Returns or sets an integer that represents the color scheme for the chart. Read/Write.|
